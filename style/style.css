@@ -81,6 +81,7 @@
 }
 .resume_text_01>*{
     color: #D9CEC5;
+    text-align: center;
 }
 .resume_text_01 hr{
     width: 30px;
@@ -169,7 +170,7 @@
 .certificate_box{
     width: 30%;
     height: 600px;
-    background-color: #A6806A;
+    background-color: #a6806a4b
 }
 .img-icon{
     margin-top: 30px;
@@ -204,14 +205,13 @@
 }
 .certificate_box p{
     text-align: center;
-    margin: 15px 20px 0px;
+    margin: 0 20px 0px;
+}
+.certificate_box p:nth-of-type(2n+1){
+    margin-top: 10px;
 }
 /* 프로젝트 영역 */
-.project_wrap{
-    width: 1280px;
-    height: 720px;
-    background-color: #592E1E;
-}
+
 .projectheader h1{
     font-size: 40px;
     margin-left: 30px;
@@ -219,7 +219,8 @@
 }
 .projectlist{
     max-width: 1280px;
-    width: 100%; 
+    width: 100%;
+    margin-bottom: 100px;
 }
 .projectlist ul{
     font-size: 0;
@@ -288,4 +289,15 @@ ul>li>a h3{
     text-align: center;
     padding: 20px;
     color: #666;
+}
+footer{
+    width: 1280px;
+    height: 100px;
+    background-color: #592E1E;
+}
+footer p{
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
