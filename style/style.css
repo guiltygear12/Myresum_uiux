@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
+.main{
+    width: 1280px;
+}
 .header_menu_wrap{
     width: 100%;
     height: 100px;
@@ -63,7 +66,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: blue;
+    background-color: #D9CEC5;
     float: left;
     margin: 50px 50px 0 50px;
 }
@@ -180,7 +183,7 @@
     background: #A6806A url("../picture/cg.jpg") -100px 30px repeat;
 }
 .cer_img02{
-    background: #A6806A url("../picture/coding.jpg") -100px 0 / 500px repeat;
+    background: #A6806A url("../picture/webDesign.png") -50px -30px / 400px repeat;
 }
 .cer_img03{
     background: #A6806A url("../picture/studying.jpg") -50px -100px / 500px repeat;
@@ -202,4 +205,87 @@
 .certificate_box p{
     text-align: center;
     margin: 15px 20px 0px;
+}
+/* 프로젝트 영역 */
+.project_wrap{
+    width: 1280px;
+    height: 720px;
+    background-color: #592E1E;
+}
+.projectheader h1{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.projectlist{
+    max-width: 1280px;
+    width: 100%; 
+}
+.projectlist ul{
+    font-size: 0;
+}
+.projectlist ul>li{
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+}
+.projectlist ul>li>a{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+ul>li>a .screen{
+    position: relative;
+    overflow: hidden;
+}
+ul>li>a .screen::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s;
+}
+ul>li>a:hover .screen::after{
+    opacity: 1;
+}
+ul>li>a .screen .top{
+    position:absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    transition: all .5s;
+}
+ul>li>a:hover .top {
+    bottom: 52%;
+}
+ul>li>a .screen .bottom {
+    position:absolute;
+    top: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 12px;
+    transition: all .5s;
+}
+ul>li>a:hover .bottom{
+    top: 52%;
+}
+ul>li>a .screen img {
+    width: 100%;
+}
+ul>li>a h3{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #666;
 }
